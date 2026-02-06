@@ -1,16 +1,15 @@
 package com.example.archunit;
 
 import java.nio.file.Files;
-import java.nio.file.Path;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class Foo {
-
+    
     public void callPrintStackTrace() {
         try {
-            Path path = Files.createTempDirectory("foo");
-            System.out.println(path.toAbsolutePath().toString());
+            var path = Files.createTempDirectory("foo");
+            System.out.println(path.toAbsolutePath());
 
         } catch (Exception e) {
             e.printStackTrace();

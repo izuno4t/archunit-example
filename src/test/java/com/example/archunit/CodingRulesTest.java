@@ -52,5 +52,4 @@ public class CodingRulesTest {
     static final ArchRule no_classes_should_access_standard_streams_or_throw_generic_exceptions =
             CompositeArchRule.of(NO_CLASSES_SHOULD_ACCESS_STANDARD_STREAMS)
                     .and(NO_CLASSES_SHOULD_THROW_GENERIC_EXCEPTIONS);
-
 }
